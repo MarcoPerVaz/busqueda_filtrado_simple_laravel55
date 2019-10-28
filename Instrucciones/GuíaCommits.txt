@@ -26,3 +26,21 @@ Commit - Estructura del proyecto
     -DB_PASSWORD=
   -Crear las migraciones en el gestor de base de datos
     -php artisan migrate
+Commit - Controlador, vista y ruta para users
+  Error: Edición de la migración create_users_table
+    -Edición campo bio
+      -Cambió de atributo string por text
+  -Edición de la migración create_users_table
+  -Recrear migraciones con seeds
+    -php artisan migrate:refresh --seed
+  -Edición de la vista welcome.blade.php
+    -Se le cambió el nombre por users.blade.php
+  -Edición de la vista users.blade.php
+    -Implementación de Boostrap 3.3.7 desde el sitio web:
+      -https://getbootstrap.com/docs/3.3/getting-started/
+      Nota:Sólo CDN del primer css
+  -Edición del archivo de rutas web.php
+    -Edición de la ruta / 
+  -Creación y edición del controlador UserController
+    -Creación y edición de la función index
+  -Edición del modelo User
