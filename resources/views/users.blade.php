@@ -37,6 +37,21 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
                     </h1>
                 </div>
             </div>
+            <div class="col-md-8">
+                <table class="table table-hover table-striped">
+                    <tbody>
+                        @foreach ($users as $user)
+                            <tr>
+                                <td>{{ $user->id }}</td>
+                                <td>{{ $user->name }}</td>
+                                <td>{{ $user->email }}</td>
+                                <td>{{ $user->bio }}</td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+                {{ $users->render() }}
+            </div>
         </div>
     </div>
 
