@@ -177,6 +177,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // LaravelCollective 5.5
+        Collective\Html\HtmlServiceProvider::class,
+
     ],
 
     /*
@@ -225,6 +228,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        // LaravelCollective 5.5
+        'Form' => Collective\Html\FormFacade::class,
 
     ],
 

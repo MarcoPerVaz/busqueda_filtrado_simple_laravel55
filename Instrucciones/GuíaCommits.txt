@@ -4,3 +4,25 @@ Commit - Creación del Proyecto
   -Creación de la carpeta Instrucciones
     -Creación del archivo GuíaCommits.txt
   -Edición del archivo readme.md
+Commit - Estructura del proyecto
+  -Implementación de Laravel Collective
+    -Instalación
+      -composer require laravelcollective/html "5.5.4"
+    -Edición del archivo config/app.php
+      -Providers:
+        -Collective\Html\HtmlServiceProvider::class,
+      -Aliases:
+        -'Form' => Collective\Html\FormFacade::class,
+  -Eliminación de la migración create_password_resets_table
+  -Edición de la migración create_users_table
+  -Edición del factory Userfactory
+  -Edición del archivo DatabaseSeeder
+    -Se registra el factory descomentando la línea que viene por defecto en la función run()
+  -Creación y edición del seed UsersTableSeeder
+    -php artisan make:seeder UsersTableSeeder
+  -Edición del archivo .env
+    -DB_DATABASE=busqueda_filtrado_simple-laravel55
+    -DB_USERNAME=root
+    -DB_PASSWORD=
+  -Crear las migraciones en el gestor de base de datos
+    -php artisan migrate
