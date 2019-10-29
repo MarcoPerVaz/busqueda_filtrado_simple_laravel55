@@ -49,3 +49,7 @@ Commit - Listado de usuarios con paginación
 Commit - Query Scopes
   -Edición del modelo User
     -Creación de 3 query scopes scopeName(), scopeEmail() y scopeBio()
+Commit - Uso de query scopes en controlador
+  -Edición del controlador UserController
+    -Edición de la función index()
+<----------Fin---------->
