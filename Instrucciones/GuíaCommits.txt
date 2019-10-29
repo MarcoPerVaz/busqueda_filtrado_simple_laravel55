@@ -46,3 +46,6 @@ Commit - Controlador, vista y ruta para users
   -Edición del modelo User
 Commit - Listado de usuarios con paginación
   -Edición de la vista users.blade.php
+Commit - Query Scopes
+  -Edición del modelo User
+    -Creación de 3 query scopes scopeName(), scopeEmail() y scopeBio()
